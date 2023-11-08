@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotesWall</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./style.css" rel="stylesheet"></link>
+</head>
+<body>
+    <div class="bg-[#F2F2F2] h-80 flex justify-center items-center">
+        
+        <textarea id="textarea" placeholder="// Write a note here" class="h-[100px] w-[500px] p-[10px] bg-[#ffffff] rounded-[6px] border-[1px] border-black" style="box-shadow: 5px 5px #394356;"></textarea>
+        
+        <div class="action m-3 flex flex-col"> 
+            <input id="color" type="color"  style="width: 80px; height: 33px;" class="border-2 border-[#767676] mb-2" value="#FFFFFF">
+            <button  id="submit" class="bg-[#394356] text-white rounded-md" style="box-shadow: 5px 5px #d1d1e0; min-height: 35px; min-width: 40px;">Add note</button>
+        </div>
+
+    </div>
+    <div class="itemsDisplayed" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+        <h1 class="text-xl font-semibold flex justify-center items-center pt-[5%]" id="turnOffThisOne">You haven't added notes yet.</h1>
+    </div>
+    
+</body>
+<script defer src="./script.js"></script>
+</html>
